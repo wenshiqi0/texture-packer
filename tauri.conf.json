@@ -1,0 +1,53 @@
+{
+    "build": {
+        "beforeBuildCommand": "npm run build",
+        "beforeDevCommand": "npm run build",
+        "devPath": "./dist/web",
+        "distDir": "./dist/web"
+    },
+    "package": {
+        "productName": "tex-packer",
+        "version": "0.1.0"
+    },
+    "tauri": {
+        "allowlist": {
+            "all": true
+        },
+        "bundle": {
+            "identifier": "com.wen.texpacker",
+            "macOS": {
+                "entitlements": null,
+                "exceptionDomain": "",
+                "frameworks": [],
+                "providerShortName": null,
+                "signingIdentity": null
+            },
+            "resources": [],
+            "shortDescription": "",
+            "targets": "all",
+            "windows": {
+                "certificateThumbprint": null,
+                "digestAlgorithm": "sha256",
+                "timestampUrl": ""
+            }
+        },
+        "security": {
+            "csp": null
+        },
+        "updater": {
+            "active": false
+        },
+        "windows": [
+            {
+                "label": "main-window",
+                "fullscreen": false,
+                "height": 600,
+                "resizable": false,
+                "title": "TexPacker!",
+                "width": 800,
+                "focus": true,
+                "fileDropEnabled": true
+            }
+        ]
+    }
+}
