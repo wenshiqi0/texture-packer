@@ -4,7 +4,10 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "vite build"
+        "build": "vite build",
+        "watch": "vite build --watch",
+        "dev": "vite dev",
+        "start": "cargo run"
     },
     "author": "Winsky Wen",
     "license": "MIT",

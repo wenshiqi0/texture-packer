@@ -1,18 +1,17 @@
 use tauri::{self, Manager};
 
 fn main() {
-    tauri::Builder::default()
-        .setup(|app| {
-            
-            match app.get_window("main-window") {
-                Some(window) => {
-
-                },
-                _ => (),
-            }
-
-            Ok(())
-        })
-        .run(tauri::generate_context!())
+    // build application
+    let app = tauri::Builder::default()
+        .build(tauri::generate_context!())
         .expect("error while running tauri application");
+
+    // appliaction run handler;
+    app.run(|app, _event| {
+        match app.get_window("main-window") {
+            Some(_window) => {
+            },
+            _ => (),
+        }
+    })
 }

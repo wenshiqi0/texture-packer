@@ -1,0 +1,1 @@
+export const DEFAULT_DARG_IMAGE_TIPS = 'Drag Images Here!';
