@@ -2910,6 +2910,7 @@ dependencies = [
 name = "tex-packer"
 version = "0.1.0"
 dependencies = [
+ "lazy_static",
  "tauri",
  "tauri-build",
 ]

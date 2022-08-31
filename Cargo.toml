@@ -9,6 +9,7 @@ tauri-build = { version = "1.0.0", features = [] }
 
 [dependencies]
 tauri = { version = "1.0.0", features = ["api-all"] }
+lazy_static = "1.0.0"
 
 [features]
 # by default Tauri runs in production mode
