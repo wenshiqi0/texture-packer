@@ -1,9 +1,13 @@
 mod file;
 mod state;
+mod server;
 
 use tauri::{self, Manager};
 
 fn main() {
+    // setup udp server for files
+    server::setup();
+
     // build application
     let app = tauri::Builder::default()
         .build(tauri::generate_context!())
